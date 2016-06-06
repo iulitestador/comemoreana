@@ -1,0 +1,203 @@
+﻿
+
+<h1 align="center">Cadastrar Funcionário</h1>
+<!-- DADOS PESSOAIS-->
+<fieldset>
+ <legend>Dados Pessoais</legend>
+ <table cellspacing="10">
+<tr>
+   <td>
+    <label for="nome">Nome: </label>
+   </td>
+   <td align="left">
+    <input name="nome" type="text" size="60" maxlength="60">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label>Data de Nasc.: </label>
+   </td>
+   <td align="left"><input name="dt_nasc_fam" class="data" id="data" type="text" size="10" maxlength="10" /></td>
+  </tr>
+  <tr>
+   <td>
+    <label for="rg">RG: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="rg" size="13" maxlength="13"> 
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="rg">CPF: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="cpf" class="cpf" id="cpf" size="11" maxlength="11"> 
+   </td>
+  </tr>
+ </table>
+</fieldset>
+
+<br />
+<!-- ENDEREÇO -->
+<fieldset>
+ <legend>Dados de Endereço e Contatos</legend>
+ <table cellspacing="10">
+
+  <tr>
+   <td>
+    <label for="rua">Rua:</label>
+   </td>
+   <td align="left">
+    <input type="text" name="rua">
+   </td>
+   <td>
+    <label for="numero">Numero:</label>
+   </td>	
+   <td> 
+    <input type="text" name="numero" size="4">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="bairro">Bairro: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="bairro">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="UF">UF:</label>
+   </td>
+   <td align="left">
+    <select name="UF"> 
+    <option value="">--</option>
+    <option value="ac">AC</option> 
+    <option value="al">AL</option> 
+    <option value="am">AM</option> 
+    <option value="ap">AP</option> 
+    <option value="ba">BA</option> 
+    <option value="ce">CE</option> 
+    <option value="df">DF</option> 
+    <option value="es">ES</option> 
+    <option value="go">GO</option> 
+    <option value="ma">MA</option> 
+    <option value="mt">MT</option> 
+    <option value="ms">MS</option> 
+    <option value="mg">MG</option> 
+    <option value="pa">PA</option> 
+    <option value="pb">PB</option> 
+    <option value="pr">PR</option> 
+    <option value="pe">PE</option> 
+    <option value="pi">PI</option> 
+    <option value="rj">RJ</option> 
+    <option value="rn">RN</option> 
+    <option value="ro">RO</option> 
+    <option value="rs">RS</option> 
+    <option value="rr">RR</option> 
+    <option value="sc">SC</option> 
+    <option value="se">SE</option> 
+    <option value="sp">SP</option> 
+    <option value="to">TO</option> 
+   </select>
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="cidade">Cidade: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="cidade">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="t_logr">CEP: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="cep" class="cep" id="cep">
+   </td>
+  </tr>
+   <tr>
+   <td>
+    <label>Telefone res.:</label>
+   </td>
+   <td align="left">
+    <input type="text" name="tel_res" class="tel" size="11" maxlength="11"></td>
+  </tr>
+   <tr>
+   <td>
+    <label>Telefone cel.:</label>
+   </td>
+   <td align="left">
+    <input type="text" name="tel_cel" class="tel" size="11" maxlength="11"></td>
+  </tr>
+ </table>
+</fieldset>
+<br />
+<fieldset>
+ <legend>Dados de admissão</legend>
+ <table cellspacing="10">
+  <tr>
+	<td>Cargo: </td><td><select name="cargo">
+		<option value="">--</option>
+		<option value="balconista">Balconista</option>
+		<option value="gerente">Gerente</option>
+		<option value="entregador">Entregador</option>
+	</select></td>
+  </tr>
+  <br>
+  <tr>
+	<td>Salário:</td><td><input type="text"name="matricula" size="6" maxlength="6"/> </td>
+  </tr>
+ </table>
+</fieldset>
+<!-- DADOS DE LOGIN -->
+<fieldset>
+ <legend>Dados de login</legend>
+ <table cellspacing="10">
+  <tr>
+   <td>
+    <label for="email">E-mail: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="email">
+   </td>
+  </tr>
+  <tr>
+   <!--<td>
+    <label for="imagem">Imagem de perfil:</label>
+   </td>
+   <td>
+    <input type="file" name="imagem" >
+
+   </td>-->
+  </tr>
+  </tr>
+  <tr>
+   <td>
+    <label for="pass">Senha: </label>
+   </td>
+   <td align="left">
+    <input type="password" name="pass">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="passconfirm">Confirme a senha: </label>
+   </td>
+   <td align="left">
+    <input type="password" name="passconfirm">
+   </td>
+  </tr>
+ </table>
+</fieldset>
+<br />
+<center><input type="submit" value="Salvar" />
+<input type="reset" value="Cancelar"></center>
+</form>
+
+
+
+
