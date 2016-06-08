@@ -142,7 +142,7 @@ Cargo<br /><br /></div>
 
  <?php
    if(@$_REQUEST["pag"] == "listartemas"){
-	include("listartemas.php");
+	include("selecionartema.php");
    }
     if(@$_REQUEST["pag"] == "listarclientes"){
 	include("listarclientes.html");

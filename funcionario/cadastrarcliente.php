@@ -10,11 +10,14 @@
 $(document).ready(function(){
 	$("input.data").mask("99/99/9999");
         $("input.cep").mask("99.999-999");
-		$("input.ddd").mask("(99)");
-		$("input.tel").mask("9999-9999");	
+		$("input.ddd").mask("99");
+		$("input.tel").mask("9999-9999");		
 		$("input.cel").mask("99999-9999");
         $("input.cpf").mask("999.999.999-99");
 		$("input.cnpj").mask("99.999.999/9999-99");
+	$("form").submit(function(){
+		$(":input").unmask();
+	});
 });
 
 function apaga_CPF() {	
