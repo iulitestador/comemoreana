@@ -4,10 +4,13 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>Cadastrar Cliente</title>
 <script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/jquery.maskedinput.js"></script>
+<script type="text/javascript" src="js/jquery.mask.js"></script>
 <script>
 
 $(document).ready(function(){
+	//RETIRAR:
+	//$("input").prop("required", false);
+	
 	$("input.data").mask("99/99/9999");
         $("input.cep").mask("99.999-999");
 		$("input.ddd").mask("99");
@@ -15,8 +18,11 @@ $(document).ready(function(){
 		$("input.cel").mask("99999-9999");
         $("input.cpf").mask("999.999.999-99");
 		$("input.cnpj").mask("99.999.999/9999-99");
-	$("form").submit(function(){
-		$(":input").unmask();
+	
+	$("form").submit(function(event){
+		//event.preventDefault();
+		$("input").unmask();
+		alert( $(this).serialize() );
 	});
 });
 
@@ -89,13 +95,13 @@ function tipoPessoaSel() {
 	<input type='text' name='ds_emissor_rg' maxlength='2' size='38' /><br><br>
  
  
-                    	Telefone Residencial:
-						<input id="ddd" class="ddd" type='text' name='ds_ddd_res' maxlength='2' size='2' />
-						<input id="tel" class="tel" type='text' name='ds_telefone_res' maxlength='9' size='10' /><br><br>
+					Telefone Residencial:
+					<input id="ddd1" class="ddd" type='text' name='ds_ddd_res' maxlength='2' size='2' />
+					<input id="tel" class="tel" type='text' name='ds_telefone_res' maxlength='10' size='10' /><br><br>
 					
 					Telefone Celular:
-						<input id="ddd" class="ddd" type='text' name='ds_ddd_cel' maxlength='2' size='2' />
-						<input id="cel" class="cel" type='text' name='ds_telefone_cel' maxlength='9' size='10' /><br><br>						
+						<input id="ddd2" class="ddd" type='text' name='ds_ddd_cel' maxlength='2' size='2' />
+						<input id="cel" class="cel" type='text' name='ds_telefone_cel' maxlength='10' size='10' /><br><br>						
 													
 											
 					E-mail:

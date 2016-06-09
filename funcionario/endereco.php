@@ -37,7 +37,7 @@ echo '
         <input id="inputcomplemento" type="text" name="ds_end_complemento" required /><br>
 		
 		<label>CEP</label><br>
-        <input id="inputcep" type="text" name="ds_cep" /><br>
+        <input id="inputcep" class="cep" type="text" name="ds_cep" /><br>
 		
 		
     </fieldset>
