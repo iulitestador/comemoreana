@@ -9,7 +9,7 @@
 	if(@$_REQUEST['ds_tema']){
 	
 	$ds_tema = $_REQUEST['ds_tema']; 
-	$ds_descricao = $_REQUEST['ds_tema'];
+	$ds_descricao = $_REQUEST['ds_descricao'];
 	$ds_genero = $_REQUEST['genero'];
 	$ds_data_compra = $_REQUEST['data_tema']; 
 	$ds_preco = $_REQUEST['preco']; 
@@ -54,7 +54,7 @@
 						</tr>
 						<tr>
 						<td>Descrição:</td>
-						<td><textarea rows="10" cols="40" name='ds_tema'> </textarea> </td>	
+						<td><textarea rows="10" cols="40" name='ds_descricao'> </textarea> </td>	
 						</tr>
 						</tr>
 						<td><br>Gênero:<br><br></td>
