@@ -1,0 +1,5 @@
+não fiz o fork primeiro, simplesmente pedi pra criar um novo arquivo, e o gut me informou que ia fazer, automaticamente,
+um fork. Mas ele disse que submeter uma mudança criaria o arquivo em um branch do fork, para que, dali, se pudesse mandar
+o pull request.
+
+Vamos ver como é.
